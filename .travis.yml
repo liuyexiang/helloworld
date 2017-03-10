@@ -1,15 +1,14 @@
 language: go
 
 go:
-  - 1.x
   - 1.6
   - 1.7.x
   - master
   
-  install:
+ install:
   - go get github.com/Sirupsen/logrus
   
-  before_install:
+ before_install:
   - cp .netrc ~
   - chmod 600 .netrc
  
